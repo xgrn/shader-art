@@ -29,7 +29,7 @@ tests/     Vitest specs — engine/ and examples/, each split into e2e/ and unit
 npm install
 ```
 
-Requires Node 20+. `preact` and `three` are runtime deps; everything else is dev.
+Requires Node 24+. `preact` and `three` are runtime deps; everything else is dev.
 
 ## Run the dev server
 
