@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>shader-art</title>
+    <script type="module" src="./examples/gallery.tsx"></script>
+  </head>
+  <body
+    class="min-h-screen bg-white text-neutral-700 antialiased dark:bg-neutral-950 dark:text-neutral-300"
+  >
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('shader-art:theme');
+          if (t !== 'light' && t !== 'dark')
+            t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.body.classList.add('theme-' + t);
+        } catch (e) {
+          document.body.classList.add('theme-dark');
+        }
+      })();
+    </script>
+    <div id="app"></div>
+  </body>
+</html>

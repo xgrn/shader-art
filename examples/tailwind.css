@@ -1,0 +1,10 @@
+/* Tailwind's own config surface — kept as plain CSS so `@tailwindcss/vite`
+   processes it directly. Authored styles live in `ui.scss`. */
+@import 'tailwindcss';
+
+/* Class-based dark mode: `dark:` applies under `body.theme-dark`. */
+@custom-variant dark (&:where(.theme-dark, .theme-dark *));
+
+@theme {
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+}
