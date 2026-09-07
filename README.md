@@ -2,6 +2,8 @@
 
 Build pure fragment-shader art as graphs of typed nodes.
 
+**[Live demo →](https://xgrn.github.io/shader-art/)**
+
 You wire nodes together in TypeScript. The library walks the graph reachable from
 a `RendererNode`, compiles it to a single GLSL fragment shader, and runs it on a
 full-screen quad through Three.js. Every node also has a CPU implementation, so
